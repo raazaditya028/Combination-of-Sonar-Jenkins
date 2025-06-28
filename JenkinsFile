@@ -11,14 +11,6 @@ pipeline {
                 git url: 'https://github.com/sonam-niit/python-project-sonar.git',branch: 'main'
             }
         }
-        stage('Install Dependencies') {
-            steps {
-                sh '''
-            sudo apt update
-            sudo apt install -y python3-venv
-        '''
-    }
-}
 
         stage('Create Virtualenv') {
             steps {
