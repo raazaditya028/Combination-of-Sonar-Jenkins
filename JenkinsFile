@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     environment{
-        SONARQUBE_ENV='MySonar'
+        SONARQUBE_ENV='MY_SONAR'
     }
     stages {
         stage('Checkout') {
