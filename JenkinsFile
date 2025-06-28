@@ -45,7 +45,7 @@ pipeline {
                 withSonarQubeEnv("${SONARQUBE_ENV}"){
                     sh '''
                         . venv/bin/activate
-                        /opt1/sonar-scanner/bin/sonar-scanner \
+                        /opt/sonar-scanner/bin/sonar-scanner
                     '''
                 }
             }
